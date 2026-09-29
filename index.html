@@ -810,6 +810,124 @@
 
 
         /* =====================================================
+           PREMIUM CONTACT DETAILS
+        ===================================================== */
+
+        .contact-details {
+            max-width: 560px;
+            margin: 30px auto 28px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .contact-card {
+            width: 100%;
+            max-width: 470px;
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            padding: 20px 22px;
+            background: #ffffff;
+            border: 1px solid #e4e7eb;
+            border-left: 4px solid #d8ad46;
+            border-radius: 8px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.07);
+            text-align: left;
+            transition: 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-4px);
+            border-color: #d8ad46;
+            box-shadow: 0 16px 35px rgba(0,0,0,0.10);
+        }
+
+        .contact-icon {
+            width: 54px;
+            height: 54px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #07111f;
+            color: #d8ad46;
+            border-radius: 7px;
+            font-size: 24px;
+        }
+
+        .contact-info {
+            flex: 1;
+        }
+
+        .contact-label {
+            display: block;
+            color: #69717b;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .contact-number {
+            display: inline-block;
+            color: #07111f;
+            font-size: 23px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            transition: 0.3s ease;
+        }
+
+        .contact-number:hover {
+            color: #b58a2d;
+        }
+
+        .contact-call {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 11px 17px;
+            background: #d8ad46;
+            color: #07111f;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: 800;
+            white-space: nowrap;
+            transition: 0.3s ease;
+        }
+
+        .contact-call:hover {
+            background: #07111f;
+            color: #d8ad46;
+        }
+
+        @media (max-width: 600px) {
+            .contact-details {
+                margin: 25px auto 25px;
+            }
+
+            .contact-card {
+                padding: 18px;
+                gap: 13px;
+            }
+
+            .contact-icon {
+                width: 48px;
+                height: 48px;
+                font-size: 21px;
+            }
+
+            .contact-number {
+                font-size: 19px;
+            }
+
+            .contact-call {
+                padding: 10px 13px;
+                font-size: 12px;
+            }
+        }
+
+        /* =====================================================
            FOOTER
         ===================================================== */
 
@@ -1679,7 +1797,6 @@
 
             </p>
 
-
             <div class="hero-buttons">
 
 
@@ -1852,7 +1969,7 @@
                     and commercial establishments.
 
                 </p>
-
+               
 
             </div>
 
@@ -2134,6 +2251,40 @@
 
         </p>
 
+        <div class="contact-details">
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    ☎
+                </div>
+
+                <div class="contact-info">
+
+                    <span class="contact-label">
+                        Call SNDF
+                    </span>
+
+                    <a
+                        href="tel:8624061731"
+                        class="contact-number"
+                    >
+                        8624061731
+                    </a>
+
+                </div>
+
+                <a
+                    href="tel:8624061731"
+                    class="contact-call"
+                >
+                    Call Now
+                </a>
+
+            </div>
+
+        </div>
+
 
         <a
             href="https://www.sndfndf.com/"
@@ -2350,10 +2501,9 @@
         );
 
 
-    </script>
+    </script> 
 
 
 </body>
 
 </html>
-
